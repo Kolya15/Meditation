@@ -1,4 +1,5 @@
-$color: blue;
+@import "var";
+
 body{
   color: $color;
 }
