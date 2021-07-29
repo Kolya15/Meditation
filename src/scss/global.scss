@@ -1,0 +1,94 @@
+.main-wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color: $backgroundColor;
+}
+
+.section-ident {
+  padding-left: $indentOnTheSides;
+  padding-right: $indentOnTheSides;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+
+  .logo {
+    .logo__link {
+      img {
+        width: 100px;
+        height: 80px;
+      }
+    }
+  }
+
+
+  .nav {
+    display: flex;
+
+    &__item {
+      &:not(:first-child) {
+        margin-left: 80px;
+      }
+    }
+
+    &__link {
+      font-family: HeeboRegular, sans-serif;
+      font-size: 20px;
+      line-height: 41px;
+      color: #000000;
+    }
+
+  }
+}
+
+.home {
+  background-image: url("../img/home-bg.png");
+  background-position-y: -170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+
+  &__title {
+    text-align: center;
+    @include title(60px, #FFFFFF);
+    max-width: 758px;
+  }
+
+  &__button {
+    @include button(15px 70px);
+    font-family: HeeboBold, sans-serif;
+    font-size: 26px;
+    line-height: 130%;
+  }
+
+  &__img {
+    margin-top: 70px;
+  }
+  .subtitle {
+    padding-bottom: 30px;
+  }
+}
+
+.subtitle {
+  font-family: HeeboRegular, sans-serif;
+  font-size: 20px;
+  line-height: 130%;
+  color: rgba(0, 0, 0, 0.5);
+  max-width: 1100px;
+  text-align: center;
+  padding-top: 22px;
+}
+
+.explore {
+  padding-top: 120px;
+  display: flex;
+  justify-content: space-between;
+  &__card {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+  }
+}

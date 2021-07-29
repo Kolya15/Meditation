@@ -1,10 +1,4 @@
+@import "fonts";
 @import "var";
-
-body{
-  color: $color;
-}
-
-img{
-  width: 200px;
-  height: 200px;
-}
+@import "reset";
+@import "global";

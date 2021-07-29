@@ -5,11 +5,67 @@
 </head>
 
 <body>
-<div id="root">
-    TEST
-    TEST
-    TEST
-    <img src="<%=require('../src/img/BG.png')%>" alt="">
+<div class="main-wrapper">
+    <header class="section-ident">
+        <div class="logo">
+            <a href="#" class="logo__link">
+                <img src="<%=require('../src/img/logo.svg')%>" alt="">
+            </a>
+        </div>
+        <nav>
+            <ul class="nav">
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Explore</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" href="#" class="nav__link">Classes</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">About Us</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Privacy</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Services</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="home section-ident">
+        <h1 class="home__title">Meditations Helps You
+            Detoxify Your Body</h1>
+        <p class="subtitle">
+            “Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+            numquam eius modi tempora incidunt ut labore.”
+        </p>
+        <a href="#" class="home__button">Get Start</a>
+        <div class="home__img">
+            <img src="<%=require('../src/img/home-girl.png')%>" alt="">
+        </div>
+    </section>
+    <section class="explore section-ident">
+        <div class="explore__card">
+            <img src="" alt="" class="explore-card__img">
+            <p class="explore-card__text">There are many variations of passages of Lorem Ipsum available, but the
+                majority have suffered alteration in some form.</p>
+            <a href="" class="explore-card__button"></a>
+        </div>
+        <div class="explore__card"><img src="" alt="" class="explore-card__img">
+            <p class="explore-card__text"> It has survived not only five centuries, but also the leap into electronic
+                typesetting, remaining essentially unchanged.</p>
+            <a href="" class="explore-card__button"></a>
+        </div>
+        <div class="explore__card"><img src="" alt="" class="explore-card__img">
+            <p class="explore-card__text"> It was popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop publishing.</p>
+            <a href="" class="explore-card__button"></a>
+        </div>
+    </section>
 </div>
+
 </body>
 </html>

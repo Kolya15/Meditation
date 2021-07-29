@@ -1,10 +1,25 @@
 
 // color
-$color: red;
+//$backgroundColor: rgba(59, 209, 187, .9);
+$backgroundColor: #edfbf9;
+$colorMainTitle: red;
 
 // Text size
 
 
-@mixin title(){
+$indentOnTheSides: 150px;
 
+@mixin title($size, $color){
+  font-family: MeriendaOneRegular, serif;
+  font-size: $size;
+  line-height: 130%;
+  color: $color;
+}
+
+@mixin button($padding){
+  padding: $padding;
+  background: linear-gradient(180deg, #259385 0%, #159685 100%);
+  box-shadow: 0 20px 40px rgba(21, 113, 101, 0.2);
+  border-radius: 50px;
+  color: #FFFFFF;
 }
