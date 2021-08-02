@@ -23,3 +23,11 @@ $indentOnTheSides: 150px;
   border-radius: 50px;
   color: #FFFFFF;
 }
+
+@mixin text($marginTop){
+  font-family: HeeboRegular, sans-serif;
+  font-size: 24px;
+  margin-top: $marginTop;
+  line-height: 130%;
+  color: rgba(0, 0, 0, 0.5);
+}

@@ -1,3 +1,5 @@
+
+
 .main-wrapper {
   max-width: 1920px;
   margin: 0 auto;
@@ -18,8 +20,8 @@ header {
   .logo {
     .logo__link {
       img {
-        width: 100px;
-        height: 80px;
+        width: 90px;
+        height: 60px;
       }
     }
   }
@@ -30,14 +32,13 @@ header {
 
     &__item {
       &:not(:first-child) {
-        margin-left: 80px;
+        margin-left: 50px;
       }
     }
 
     &__link {
       font-family: HeeboRegular, sans-serif;
-      font-size: 20px;
-      line-height: 41px;
+      font-size: 18px;
       color: #000000;
     }
 
@@ -87,8 +88,69 @@ header {
   padding-top: 120px;
   display: flex;
   justify-content: space-between;
-  &__card {
+
+  //display: grid;
+  //grid-template-columns: repeat(3, 1fr);
+  //grid-column-gap: 180px;
+
+  &-card {
+    max-width: 26%;
+    //max-width: 420px;
     background-color: #FFFFFF;
     border-radius: 20px;
+    padding: 50px 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &__img{
+      width: 100px;
+      height: 100px;
+    }
+
+    &__title {
+      font-family: HeeboMedium, sans-serif;
+      font-size: 32px;
+      line-height: 47px;
+      color: #000000;
+      padding: 20px 10px;
+    }
+
+    &__text {
+      font-family: HeeboRegular, sans-serif;
+      font-size: 18px;
+      line-height: 130%;
+      color: #000000;
+      margin-bottom: 60px;
+    }
   }
 }
+
+.main-button {
+  @include button(12px 44px);
+}
+
+
+.classes {
+  padding-top: 80px;
+}
+
+.wrapper-section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .section-title {
+    text-align: center;
+    @include title(54px, #000000);
+    max-width: 706px;
+  }
+
+  .text {
+    text-align: center;
+    @include text(22px);
+    max-width: 1105px
+  }
+}
+
