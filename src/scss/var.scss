@@ -26,7 +26,7 @@ $indentOnTheSides: 150px;
 
 @mixin text($marginTop){
   font-family: HeeboRegular, sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   margin-top: $marginTop;
   line-height: 130%;
   color: rgba(0, 0, 0, 0.5);

@@ -1,5 +1,4 @@
 
-
 .main-wrapper {
   max-width: 1920px;
   margin: 0 auto;
@@ -69,6 +68,7 @@ header {
   &__img {
     margin-top: 70px;
   }
+
   .subtitle {
     padding-bottom: 30px;
   }
@@ -104,7 +104,7 @@ header {
     align-items: center;
     text-align: center;
 
-    &__img{
+    &__img {
       width: 100px;
       height: 100px;
     }
@@ -147,10 +147,107 @@ header {
     max-width: 706px;
   }
 
-  .text {
+  .section-subtitle {
     text-align: center;
     @include text(22px);
     max-width: 1105px
   }
 }
 
+.classes-data,
+.about_data {
+  padding-top: 70px;
+  padding-bottom: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.block-name {
+  font-family: HeeboMedium, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 22px;
+  line-height: 47px;
+}
+
+.block-text {
+  @include text(10px);
+}
+
+
+.classes-data {
+  background-image: url("../img/types-meditation__background.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+
+  &__img {
+    max-width: 600px;
+    max-height: 500px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__types-meditation {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 15px;
+    max-width: 700px;
+
+    .type-meditation {
+      position: relative;
+      border-radius: 15px;
+      padding: 40px 15px;
+      cursor: pointer;
+
+      &:after {
+        position: absolute;
+        right: 57px;
+        bottom: 20px;
+        content: '';
+        background-image: url("../img/arrow.svg");
+        background-size: contain;
+        //content: url("../img/arrow.png");
+        width: 67px;
+        height: 16px;
+      }
+
+
+    }
+
+    .type-meditation_active {
+      background-color: #FFFFFF;
+    }
+
+  }
+}
+
+.about {
+  background-image: url("../img/about__background.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &_data {
+    .wrapper-songs {
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      grid-row-gap: 30px;
+      margin: 30px 0;
+      .song {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: linear-gradient(90deg, #C3E2DE 27.22%, #CFF1ED 48.89%, #EDFBF9 96.77%);
+        border: 1px solid red;
+        border-radius: 15px;
+        padding: 30px 40px;
+
+        &__play-button img {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+  }
+}
