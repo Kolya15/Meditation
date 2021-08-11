@@ -229,25 +229,75 @@ header {
   background-repeat: no-repeat;
 
   &_data {
+    $borderWidth: 2px;
     .wrapper-songs {
+      width: 100%;
+      max-width: 650px;
       display: grid;
-      grid-template-rows: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 150px);
       grid-row-gap: 30px;
       margin: 30px 0;
-      .song {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: linear-gradient(90deg, #C3E2DE 27.22%, #CFF1ED 48.89%, #EDFBF9 96.77%);
-        border: 1px solid red;
-        border-radius: 15px;
-        padding: 30px 40px;
+      .substrate-song {
 
-        &__play-button img {
+        width: 100%; // todo use calc()
+        background: linear-gradient(90deg, rgba(32,152,136,1) 0%, rgba(229,246,244,1) 100%);
+        border-radius: calc(4 * #{$borderWidth}); // todo use calc()
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .song {
+        width: calc(100% - #{$borderWidth} * 2);
+        height: calc(100% - #{$borderWidth} * 2);
+        position: relative;
+        //top: 2px;
+        //left: 2px;
+        //bottom: 4px;
+        border-radius: calc(4 * #{$borderWidth});
+        background: linear-gradient(90deg, #C3E2DE 27.22%, #CFF1ED 48.89%, #EDFBF9 96.77%);
+        .wrapper-song{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 30px 40px;
+          background-image: url("../img/musicWave.svg");
+          background-repeat: no-repeat;
+          background-position: 20px 0;
+        }
+        &__play-button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
           width: 80px;
           height: 80px;
+          border: 2px solid #FFFFFF;
+          border-radius: 50%;
+          background: linear-gradient(180deg, #259385 0%, #159685 100%);
+          box-shadow: 0px 25px 30px rgba(179, 228, 221, 0.3), 0px 9px 24px rgba(26, 127, 114, 0.23);
+          cursor: pointer;
+          &::after {
+            content: url("../img/song__play-button_triangle.svg");
+            width: 22px;
+            height: 26px;
+          }
+          img {
+            width: 22px;
+            height: 26px;
+          }
         }
       }
     }
   }
+  &__img img{
+    width: 100%;
+    height: auto;
+    max-width: 640px;
+  }
+}
+
+.privacy {
+  padding-top: 128px;
+  background-image: url("../img/privacy__background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }

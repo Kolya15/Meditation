@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 
@@ -21,7 +22,7 @@
                     <a href="#" class="nav__link">Explore</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#" href="#" class="nav__link">Classes</a>
+                    <a href="#" class="nav__link">Classes</a>
                 </li>
                 <li class="nav__item">
                     <a href="#" class="nav__link">About Us</a>
@@ -115,37 +116,45 @@
         </div>
         <div class="about_data section-ident">
             <div class="wrapper-songs">
-                <div class="song">
-                    <div>
-                        <h5 class="block-name">Turning off Auto Pilot</h5>
-                        <p class="block-text">Intriduction, Strees Assesment</p>
-                    </div>
-                    <div>
-                        <button class="song__play-button">
-                            <img src="<%=require('../src/img/song__play-button.png')%>" alt="song play button">
-                        </button>
-                    </div>
-                </div>
-                <div class="song">
-                    <div>
-                        <h5 class="block-name">Crazy Wind Sound</h5>
-                        <p class="block-text">Relex Mind</p>
-                    </div>
-                    <div>
-                        <button class="song__play-button">
-                            <img src="<%=require('../src/img/song__play-button.png')%>" alt="song play button">
-                        </button>
+                <div class="substrate-song">
+                    <div class="song">
+                        <div class="wrapper-song">
+                            <div>
+                                <h5 class="block-name">Turning off Auto Pilot</h5>
+                                <p class="block-text">Intriduction, Strees Assesment</p>
+                            </div>
+                            <div>
+                                <button class="song__play-button"/>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="song">
-                    <div>
-                        <h5 class="block-name">Mental Wellness</h5>
-                        <p class="block-text">Strees Relief</p>
+                <div class="substrate-song">
+                    <div class="song">
+                        <div class="wrapper-song">
+                            <div>
+                                <h5 class="block-name">Crazy Wind Sound</h5>
+                                <p class="block-text">Relex Mind</p>
+                            </div>
+                            <div>
+                                <button class="song__play-button"/>
+
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <button class="song__play-button">
-                            <img src="<%=require('../src/img/song__play-button.png')%>" alt="song play button">
-                        </button>
+                </div>
+                <div class="substrate-song">
+                    <div class="song">
+                        <div class="wrapper-song">
+                            <div>
+                                <h5 class="block-name">Mental Wellness</h5>
+                                <p class="block-text">Strees Relief</p>
+                            </div>
+                            <div>
+                                <button class="song__play-button"/>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -153,6 +162,14 @@
                 <img src="<%=require('../src/img/about__img.png')%>" alt="About">
             </div>
         </div>
+    </section>
+    <section class="privacy">
+        <div class="wrapper-section-title section-ident">
+            <h2 class="section-title">The Best Of Meditation</h2>
+            <p class="section-subtitle">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.”</p>
+        </div>
+
     </section>
 </div>
 
